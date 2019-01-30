@@ -1,1 +1,1 @@
-# jfdz11-TychTrzech
+# jfdz11-TychTrzech - Testy pytań zamkniętych
