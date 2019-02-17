@@ -64,18 +64,6 @@
 .togglearea {
     display: none; 
 }
-@media screen and (max-width:873px){
-    .navbar {
-        display: none;
-    }
-    #toggle:checked + .navbar {
-        display: flex;
-        flex-direction: column; 
-    }  
-    .togglearea {
-        display: flex; 
-    }
-}
 
 /*sekcja HERO*/
 .hero {
@@ -175,4 +163,37 @@
 }
 .fa:hover {
     background-color: rgb(189, 38, 38);
+}
+
+.big_icons_flex_container{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid blue;
+    justify-content: space-around;
+
+}
+
+.big_icon_item{
+    border: red;
+    height: 250px;
+    margin: 10px;
+}
+
+.big_icon_item img {
+    max-width:100%;
+    max-height: 100%;
+    min-width: 200px;
+}
+
+@media screen and (max-width:873px){
+    .navbar {
+        display: none;
+    }
+    #toggle:checked + .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .togglearea {
+        display: flex;
+    }
 }
