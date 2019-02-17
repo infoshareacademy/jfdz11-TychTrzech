@@ -60,16 +60,22 @@
     display: none; 
 }
 
+.hero{
+    width: 100vw;
+    height: 40vh;
+    background: center /100% 100%url('bubble-test.jpg') no-repeat ;
+    background-size: cover;
+    text-align: center;
+    padding-top: 30vh;
+    color:rgb(235, 121, 15);
 
-
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    
 }
 
+}
+.hero__h1{
+    padding-top: 50px;
+    font-size: 6rem;
+}
 
 .fa  {
     display: flex;
