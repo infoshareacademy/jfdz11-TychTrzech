@@ -8,9 +8,8 @@
     --primiaryColor: #333333;
     --secondaryColor:#FF9933;
     --thirdColor: #CCCCCC;
-
-
   }
+
 .navbar {
     background-color: #FF9933;
     display: flex;
@@ -71,7 +70,6 @@
 
 }
 
-}
 .hero__h1{
     padding-top: 50px;
     font-size: 6rem;
