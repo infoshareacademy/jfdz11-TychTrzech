@@ -168,21 +168,27 @@
 .big_icons_flex_container{
     display: flex;
     flex-wrap: wrap;
-    border: solid blue;
     justify-content: space-around;
-
+    align-items: center;
+    flex-grow: 1;
 }
 
 .big_icon_item{
-    border: red;
-    height: 250px;
-    margin: 10px;
+    height: 240px;
+    margin: 50px 10px 50px 10px;
 }
 
 .big_icon_item img {
     max-width:100%;
     max-height: 100%;
-    min-width: 200px;
+    min-width: 270px;
+    height: auto;
+}
+
+.big_icon_item p {
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+    text-align: center;
 }
 
 @media screen and (max-width:873px){
