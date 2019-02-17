@@ -1,66 +1,36 @@
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing:  border-box;
 }
-.navbar {
-    background-color: #FF9933;
-    display: flex;
-    justify-content: center;
+html {
+    font-size: 10px;
 }
-.navbar a {
-    color: #fff;
+/* całe zdjęcie
+.hero{ 
+    
+    width: 100vw;
+    height: 50vh;
+    background: center / 100% 100%  url('bubble-test.jpg') no-repeat ;
+    display:flex;
+    justify-items: space-around;
+}
+*/
+
+.hero{
+    width: 100vw;
+    height: 40vh;
+    background: center /100% 100%url('img/bubble-test.jpg') no-repeat ;
+    background-size: cover;
     text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 20px 40px;
+    padding-top: 30vh;
+    color:rgb(235, 121, 15);
+
 }
-.navbar a:hover {
-    background-color: #fff;
-    color: #ccc;
+
 }
-#toggle {
-    display: none;
-}
-.togglearea {
-    background-color: #333;
-    border-bottom: 2px solid #fff;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-}
-.togglearea label {
-    background-color: #fff;
-    width: 50px;
-    height: 45px;
-    color: #000;
-    border-radius: 6px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.togglearea label span {
-    background-color: #000;
-    width: 70%;
-    height: 4px;
-    margin: 2px 0;
-}
-.togglearea {
-    display: none; 
-}
-@media screen and (max-width:700px){
-    .navbar {
-        display: none;
-    }
-    #toggle:checked + .navbar {
-        display: flex;
-        flex-direction: column; 
-    }
-        
-    .togglearea {
-        display: flex; 
-    }
+.hero__h1{
+    padding-top: 50px;
+    font-size: 6rem;
 }
