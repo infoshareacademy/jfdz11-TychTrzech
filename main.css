@@ -3,6 +3,14 @@
     margin: 0px;
     box-sizing:  border-box;
 }
+
+:root { 
+    --primiaryColor: #333333;
+    --secondaryColor:#FF9933;
+    --thirdColor: #CCCCCC;
+
+
+  }
 .navbar {
     background-color: #FF9933;
     display: flex;
@@ -50,6 +58,138 @@
 }
 .togglearea {
     display: none; 
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+.fa  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #333333;
+    transition: background-color .5s ease-in-out;
+}
+.fa:hover {
+    background-color: #FF9933;
+    text-decoration: none;
+}
+
+.maciek__img{
+
+    background: url('img.jpg') no-repeat;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 2px solid black;   
+}
+
+.maciek__media {
+
+    display: flex;
+    justify-content: space-around;
+
+}   
+
+.maciek__sign{
+text-align: center;
+
+}
+.tomek__media {
+
+    display: flex;
+    justify-content: space-around;
+
+}   
+
+.tomek__sign{
+
+text-align: center;
+
+
+}
+
+.tomek__img{
+
+
+    background: url('img.jpg') no-repeat;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 2px solid black;  
+    
+}
+
+.szymon__media {
+
+    display: flex;
+    justify-content: space-around;
+    
+
+}   
+
+
+.szymon__sign{
+
+text-align: center;
+
+}
+
+.szymon__img{
+
+    background: url('img.jpg') no-repeat;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 2px solid black;  
+}
+
+.adrian__media {
+
+    display: flex;
+    justify-content: space-around;
+    
+
+}   
+
+
+.adrian__sign{
+
+text-align: center;
+
+}
+
+.adrian__img{
+
+    background: url('img.jpg') no-repeat;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 2px solid black;  
+}
+
+
+.team{
+
+    display: flex;
+    flex-direction: row;
+    margin-right: 5rem;
+    justify-content: space-around;
+
 }
 @media screen and (max-width:700px){
     .navbar {
