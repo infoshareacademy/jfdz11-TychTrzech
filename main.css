@@ -1,0 +1,210 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing:  border-box;
+}
+
+:root { 
+    --primiaryColor: #333333;
+    --secondaryColor:#FF9933;
+    --thirdColor: #CCCCCC;
+  }
+
+.navbar {
+    background-color: #FF9933;
+    display: flex;
+    justify-content: center;
+}
+.navbar a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 40px;
+}
+.navbar a:hover {
+    background-color: #fff;
+    color: #ccc;
+}
+#toggle {
+    display: none;
+}
+.togglearea {
+    background-color: #333;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.togglearea label {
+    background-color: #fff;
+    width: 50px;
+    height: 45px;
+    color: #000;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.togglearea label span {
+    background-color: #000;
+    width: 70%;
+    height: 4px;
+    margin: 2px 0;
+}
+.togglearea {
+    display: none; 
+}
+
+.hero{
+    width: 100vw;
+    height: 40vh;
+    background: center /100% 100%url('bubble-test.jpg') no-repeat ;
+    background-size: cover;
+    text-align: center;
+    padding-top: 30vh;
+    color:rgb(235, 121, 15);
+
+}
+
+.hero__h1{
+    padding-top: 50px;
+    font-size: 6rem;
+}
+
+.fa  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #333333;
+    transition: background-color .5s ease-in-out;
+}
+.fa:hover {
+    background-color: #FF9933;
+    text-decoration: none;
+}
+
+.maciek__img{
+
+    background: url('img.jpg') no-repeat;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 2px solid black;   
+}
+
+.maciek__media {
+
+    display: flex;
+    justify-content: space-around;
+
+}   
+
+.maciek__sign{
+text-align: center;
+
+}
+.tomek__media {
+
+    display: flex;
+    justify-content: space-around;
+
+}   
+
+.tomek__sign{
+
+text-align: center;
+
+
+}
+
+.tomek__img{
+
+
+    background: url('img.jpg') no-repeat;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 2px solid black;  
+    
+}
+
+.szymon__media {
+
+    display: flex;
+    justify-content: space-around;
+    
+
+}   
+
+
+.szymon__sign{
+
+text-align: center;
+
+}
+
+.szymon__img{
+
+    background: url('img.jpg') no-repeat;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 2px solid black;  
+}
+
+.adrian__media {
+
+    display: flex;
+    justify-content: space-around;
+    
+
+}   
+
+
+.adrian__sign{
+
+text-align: center;
+
+}
+
+.adrian__img{
+
+    background: url('img.jpg') no-repeat;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 2px solid black;  
+}
+
+
+.team{
+
+    display: flex;
+    flex-direction: row;
+    margin-right: 5rem;
+    justify-content: space-around;
+
+}
+@media screen and (max-width:700px){
+    .navbar {
+        display: none;
+    }
+    #toggle:checked + .navbar {
+        display: flex;
+        flex-direction: column; 
+    }
+        
+    .togglearea {
+        display: flex; 
+    }
+}
