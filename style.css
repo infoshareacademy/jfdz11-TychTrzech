@@ -1,6 +1,6 @@
 :root {
     --primiaryColor: #333333;
-    --secondaryColor:#FF9933;
+    --secondaryColor:#3953ff;
     --thirdColor: #CCCCCC;
 }
 * {
@@ -17,7 +17,7 @@
     box-shadow: 0px 7px 30px -2px rgba(0,0,0,0.61);
 }
 .navbar {
-    background-color: #FF9933;
+    background-color: #3953ff;
     display: flex;
     justify-content: center;
 }
@@ -37,7 +37,6 @@
 }
 .togglearea {
     background-color: #333;
-    border-bottom: 2px solid #fff;
     color: #fff;
     padding: 10px;
     display: flex;
@@ -162,7 +161,7 @@
     margin-right: 0;
 }
 .fa:hover {
-    background-color: rgb(189, 38, 38);
+    background-color: #3953ff;
 }
 
 .big_icons_flex_container{
@@ -174,20 +173,22 @@
 }
 
 .big_icon_item{
-    height: 240px;
+    height: 200px;
     margin: 50px 10px 50px 10px;
 }
 
-.big_icon_item img {
+.big_icon_item img{
     max-width:100%;
     max-height: 100%;
-    min-width: 270px;
+    min-width: 245px;
+    min-height: 240px;
     height: auto;
+    padding: 20px;
 }
 
 .big_icon_item p {
     font-size: 20px;
-    margin: 10px 0 10px 0;
+    margin: 0 0 30px 0;
     text-align: center;
 }
 
@@ -202,4 +203,6 @@
     .togglearea {
         display: flex;
     }
+
+
 }
