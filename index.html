@@ -1,102 +1,117 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
-        <title>Document</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
 
 <style>
 
 </style>
+
 <body>
 
-    <!--sekcja NAVBAR-->
-    <nav class="navbar__wrapper">
-        <div class="togglearea">
-            <label for="toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-        
-        <input type="checkbox" id="toggle">
-        <div class="navbar">
-            <a href="#">Item 1</a>
-            <a href="#">Item 2</a>
-            <a href="#">Item 3</a>
-            <a href="#">Item 4</a>
-            <a href="#">Item 5</a>
-        </div>
-    </nav>
-
-    <!--sekcja HERO-->
-    <br><br>
-    <div class="w3-content w3-display-container" style="max-width:100%; max-height:600px; overflow: hidden">
-        <img class="mySlides" src="img/slider2.jpg">
-        <img class="mySlides" src="img/slider1.jpg">
-        <img class="mySlides" src="img/slider3.jpg">
-        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-        </div>
+<!--sekcja NAVBAR-->
+<nav class="navbar__wrapper">
+    <div class="togglearea">
+        <label for="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
     </div>
 
-    <!--sekcja ZDJECIA-->
-    <div class="content">
-        <div class="wrapper">
-            <div class="wrapper__circle">
-                <div class="wrapper__image"></div>
-            </div>
-            <p class="wrapper__paragraph">tomasz panek</p>
-            <div class="wrapper__line"></div>
-            <div class="wrapper__icon">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-youtube"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-            <div class="wrapper">
-                <div class="wrapper__circle">
-                    <div class="wrapper__image"></div>
-                </div>
-                <p class="wrapper__paragraph">Maciej Lewandowski</p>
-                <div class="wrapper__line"></div>
-                <div class="wrapper__icon">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-youtube"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="wrapper">
-                    <div class="wrapper__circle">
-                        <div class="wrapper__image"></div>
-                    </div>
-                    <p class="wrapper__paragraph">szymon kryński</p>
-                    <div class="wrapper__line"></div>
-                    <div class="wrapper__icon">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-youtube"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                    </div>
-            </div>
+    <input type="checkbox" id="toggle">
+    <div class="navbar">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+        <a href="#">Item 5</a>
     </div>
+</nav>
 
-    <!--sekcja dużych ikon-->
-<div class = "big_icons_wrapper">
+<!--sekcja HERO-->
+<br><br>
+<div class="w3-content w3-display-container" style="max-width:100%; max-height:600px; overflow: hidden">
+    <img class="mySlides" src="img/slider2.jpg">
+    <img class="mySlides" src="img/slider1.jpg">
+    <img class="mySlides" src="img/slider3.jpg">
+    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    </div>
+</div>
+
+<!--sekcja ZDJECIA-->
+<div class="team_image_flex_container">
+    <div class="wrapper">
+        <div class="wrapper__circle">
+            <div class="wrapper__image"></div>
+        </div>
+        <p class="wrapper__paragraph">tomasz panek</p>
+        <div class="wrapper__line"></div>
+        <div class="wrapper__icon">
+            <a href=https://www.facebook.com><i class="fa fa-facebook"></i></a>
+            <a href=https://www.youtube.com><i class="fa fa-youtube"></i></a>
+            <a href=https://www.twitter.com><i class="fa fa-twitter"></i></a>
+            <a href=https://www.instagram.com><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper__circle">
+            <div class="wrapper__image"></div>
+        </div>
+        <p class="wrapper__paragraph">Maciej Lewandowski</p>
+        <div class="wrapper__line"></div>
+        <div class="wrapper__icon">
+            <a href=https://www.facebook.com><i class="fa fa-facebook"></i></a>
+            <a href=https://www.youtube.com><i class="fa fa-youtube"></i></a>
+            <a href=https://www.twitter.com><i class="fa fa-twitter"></i></a>
+            <a href=https://www.instagram.com><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper__circle">
+            <div class="wrapper__image"></div>
+        </div>
+        <p class="wrapper__paragraph">szymon kryński</p>
+        <div class="wrapper__line"></div>
+        <div class="wrapper__icon">
+            <a href=https://www.facebook.com><i class="fa fa-facebook"></i></a>
+            <a href=https://www.youtube.com><i class="fa fa-youtube"></i></a>
+            <a href=https://www.twitter.com><i class="fa fa-twitter"></i></a>
+            <a href=https://www.instagram.com><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper__circle">
+            <div class="wrapper__image"></div>
+        </div>
+        <p class="wrapper__paragraph">adrian jaskolski</p>
+        <div class="wrapper__line"></div>
+        <div class="wrapper__icon">
+            <a href=https://www.facebook.com><i class="fa fa-facebook"></i></a>
+            <a href=https://www.youtube.com><i class="fa fa-youtube"></i></a>
+            <a href=https://www.twitter.com><i class="fa fa-twitter"></i></a>
+            <a href=https://www.instagram.com><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+</div>
+
+<!--sekcja dużych ikon-->
+<div class="big_icons_wrapper">
     <div class="big_icons_flex_container">
         <div class="big_icons_flex_container">
             <div class="big_icon_item">
@@ -121,36 +136,37 @@
         </div>
     </div>
 </div>
-    <!--js obsluga slidera-->
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
+<!--js obsluga slidera-->
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
 
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
         }
-
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
         }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-white";
+    }
+    setInterval(function () { plusDivs(1); }, 8000);
 
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-white", "");
-            }
-            x[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " w3-white";
-        }
-        setInterval(function () { plusDivs(1); }, 8000);
-
-    </script>
+</script>
 </body>
+
 </html>
