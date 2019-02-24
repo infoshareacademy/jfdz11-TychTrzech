@@ -221,6 +221,7 @@
     text-transform: uppercase;
     font-size: .8rem;
     text-align: center;
+    margin-top: 100px;
 }
 .footer {
     width: 100%;
@@ -323,7 +324,6 @@ span {
     box-sizing: border-box;
     font-size: 18px;
     outline: none;
-    border: none;
     border: 1px solid rgba(0, 0, 0, 0.377);
     border-radius: 7px;
     background-color: rgb(209, 88, 88);
