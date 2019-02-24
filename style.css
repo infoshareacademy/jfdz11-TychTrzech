@@ -112,17 +112,26 @@
     font-weight: 600;
 }
 /* sekcja zdjecia*/
-.team_image_flex_container {
-    width: 100vw;
+.team__image__flex__container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+.two__image__flex__container{
     justify-content: space-evenly;
+    display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
 }
+
 .wrapper {
     width: 200px;
     height: auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     margin: 50px 30px 0 30px;
 }
@@ -375,7 +384,7 @@ span {
     max-height: 150px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 15px 0px #000000; 
+    -webkit-box-shadow: 0px 0px 15px 0px #000000;
     box-shadow: 0px 0px 15px 0px #000000;
     position: absolute;
     top: 50px;
@@ -385,8 +394,8 @@ span {
     display: none;
     animation-name: modal__animation;
     animation-duration: 1s;
-    
-    
+
+
 }
 @keyframes modal__animation {
     0% {
@@ -400,7 +409,7 @@ span {
 .popup__header span {
     color: #000;
     float: right;
-    
+
     font-weight: bold;
     cursor: pointer;
     font-size: 25px;
@@ -411,7 +420,7 @@ span {
 .popup__body p {
     text-align: center;
     color: rgb(146, 146, 146);
-    
+
 }
 .footer__top {
     position: relative;
