@@ -115,12 +115,12 @@
 .team__image__flex__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-grow: 1;
 }
 .two__image__flex__container{
-    justify-content: space-evenly;
+    justify-content: space-around;
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
