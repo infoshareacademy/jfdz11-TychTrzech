@@ -136,6 +136,67 @@
         </div>
     </div>
 </div>
+
+<div class="footer__top">
+    <div class="triangle"></div>
+<p>Wszelkie prawa zastrzeżone przez Nazwa firmy © 2019</p>
+</div>
+<div class="footer">
+<div class="footer__address">
+
+</div>
+<div class="footer__line"></div>
+<div class="footer__contact">
+    <div class="footer__contactText">
+        <span class="footer__contactName">nazwa firmy sp z.o.o</span>
+        <span>ul. Grunwaldzka 264/9</span>
+        <span>80-740 Gdańsk</span>
+        <span class="footer__contactTel">+ 48 (56)765-371-009</span>
+        <span>mobile: 660-197-400</span>
+        <span class="footer__contactMail">biuro@poczta.onet.pl</span>
+    </div>
+</div>
+<div class="footer__line"></div>
+<div class="footer__form">
+    <h4>kontakt:</h4>
+    <div class="login">
+        <form>
+            <div class="input__group">
+                <input type="text" name="" required="required">
+                <span>Imię</span>
+            </div>
+            <div class="input__group">
+                <input type="text" name="" required="required">
+                <span>Nazwisko</span>
+            </div>
+            <div class="input__group">
+                <input class="input__groupText" type="text" name="" required="required">
+                <span class="input__textSpan">wiadomość</span>
+            </div>
+            <div class="input__group">
+                <input id="button__modal" type="submit" value="wyślij">
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<div class="popup" id="Simplemodal">
+
+<div class="popup__header">
+    <span id="close">&times</span>
+</div>
+<div class="popup__body">
+    <p>Twoja wiadomość została wysłana</p>
+    <p>dziekujemy</p>
+    <img src="" alt="">
+</div>
+<div class="popup__footer">
+
+</div>
+</div>
+
+
+
 <!--js obsluga slidera-->
 <script>
     var slideIndex = 1;
@@ -165,6 +226,22 @@
         dots[slideIndex - 1].className += " w3-white";
     }
     setInterval(function () { plusDivs(1); }, 8000);
+
+    var modal = document.getElementById("Simplemodal");
+        var modalBtn = document.getElementById("button__modal");
+        var closeBtn = document.getElementById("close");
+
+        modalBtn.addEventListener("click", openModal);
+        function openModal() {
+        modal.style.display = "block";
+        }
+
+        closeBtn.addEventListener("click",closeModal);
+        function closeModal() {
+        modal.style.display = "none";
+        }
+
+
 
 </script>
 </body>

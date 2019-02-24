@@ -213,6 +213,223 @@
     text-align: center;
 }
 
+.footer__top {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(211, 90, 90);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+}
+.footer {
+    width: 100%;
+    height: 320px;
+    background-color: rgba(41, 39, 39, 0.966);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__line {
+    width:1px;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.205);
+}
+.footer__address {
+    width: 400px;
+    height: 280px;
+    background-color: rgb(75, 149, 209);
+}
+.footer__contact {
+    width: 400px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+}
+.footer__contactTel {
+    margin-top: 30px;
+    position: relative;
+}
+
+.footer__contactMail{
+    margin-top: 30px;
+}
+.footer__contactText {
+    position: relative;
+}
+span {
+    display: block;
+    color: #fff;
+    line-height: 2;
+}
+.footer__contactName {
+    text-transform: uppercase;
+    color: rgb(209, 88, 88);
+}
+.footer__contactName::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 9px;
+    bottom: 0;
+    left: -130px;
+    right: 0;
+}
+.footer__contactTel::before {
+    content: url('images/003-phone.png');
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -40px;
+    right: 0;
+}
+.footer__contactMail::before {
+    content: url('images/arroba.png');
+    display: block;
+    position: absolute;
+    top: 220px;
+    bottom: 0;
+    left: -40px;
+    right: 0;
+}
+/* formularz*/
+.footer__form {
+    width: 400px;
+    height: 280px;
+}
+.footer__form h4 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.login {
+    text-align: center;
+    width: 350px;
+    box-sizing: border-box;
+    padding: 40px;
+    margin: 0 auto;
+}
+.login .input__group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.login .input__group input {
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.377);
+    border-radius: 7px;
+    background-color: rgb(209, 88, 88);
+}
+.login .input__group .input__groupText {
+    height: 80px;
+}
+.login .input__group span {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    padding: 0;
+    transition: .5s;
+    pointer-events: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(255, 255, 255)
+}
+.login .input__group input:focus ~ span {
+    top: -11px;
+    left: 15px;
+    font-size: 10px;
+    padding: 2px;
+}
+.login .input__group input[type="submit"] {
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 0;
+    height: 30px;
+    float: left;
+    font-size: 12px;
+    border-radius: 0;
+    color: rgb(209, 88, 88);
+    font-weight: bold;
+    transition: background-color .3s linear;
+    letter-spacing: 2px;
+}
+.login .input__group input[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.822);
+}
+
+
+
+/*popup*/
+.popup {
+    width: 300px;
+    max-height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px 0px #000000; 
+    box-shadow: 0px 0px 15px 0px #000000;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    display: none;
+    animation-name: modal__animation;
+    animation-duration: 1s;
+    
+    
+}
+@keyframes modal__animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.popup__header span {
+    color: #000;
+    float: right;
+    
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 25px;
+}
+.popup__body {
+    padding-top: 30px;
+}
+.popup__body p {
+    text-align: center;
+    color: rgb(146, 146, 146);
+    
+}
+.footer__top {
+    position: relative;
+}
+.triangle {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(209, 88, 88);
+    -webkit-clip-path: polygon(50% 54%, 0 79%, 100% 79%);
+    clip-path: polygon(50% 54%, 0 79%, 100% 79%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 50%;
+    top: 19px;
+    bottom: 0;
+    right: 0;
+}
+
 @media screen and (max-width:873px){
     .navbar {
         display: none;
