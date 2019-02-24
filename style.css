@@ -203,7 +203,7 @@
     min-width: 245px;
     min-height: 240px;
     height: auto;
-    padding: 20px;
+    padding: 30px;
     opacity: 1;
 }
 
@@ -428,6 +428,12 @@ span {
     top: 19px;
     bottom: 0;
     right: 0;
+}
+
+.google_map{
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 @media screen and (max-width:873px){
