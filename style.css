@@ -3,6 +3,11 @@
     --secondaryColor:#3953ff;
     --thirdColor: #CCCCCC;
 }
+html{
+    scroll-behavior: smooth;
+
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -30,10 +35,21 @@
     box-shadow: 0px 7px 30px -2px rgba(0,0,0,0.61);
     z-index: 999;
 }
+
 .navbar {
     background-color: #3953ff;
     display: flex;
     justify-content: center;
+}
+
+.navbar img{
+height: 62px;
+justify-self: flex-start;
+  padding:0;  
+}
+.logo__link{
+padding: 0;
+    
 }
 .navbar a {
     color: #fff;
@@ -42,6 +58,10 @@
     text-transform: uppercase;
     padding: 20px 40px;
 }
+
+
+
+
 .navbar a:hover {
     background-color: #fff;
     color: #ccc;
@@ -110,7 +130,55 @@
     font-size: 1.5rem;
     font-weight: 600;
 }
+
+/*SEKCJA DETAILS*/
+.article__flex__container{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+    
+}
+
+h2{
+    font-weight: bold;
+}
+.article__flex__item__container{
+
+display: flex;
+flex-direction: column;
+width: 40%;
+
+}
+
+header{
+    
+    font-size: 2.7rem;
+    margin: 10px 0 10px 0;
+}
+
+.title{
+    
+    text-align: center;
+    
+}
+
+.title p{
+    text-align: center;
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+
+
+
 /* sekcja zdjecia*/
+
 .team__image__flex__container {
     display: flex;
     flex-wrap: wrap;
@@ -243,7 +311,7 @@
 .wrapper__icon a {
     text-decoration: none;
 }
-.fa  {
+.fa {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -516,6 +584,22 @@ span {
     border: none;
 }
 
+.scroll__top {
+    width: 50px;
+    height: 50px;
+    background: var(--secondaryColor);
+    position: fixed;
+    bottom: 10%;
+    right: 20px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    
+ }
+
 @media screen and (max-width:873px){
     .navbar {
         display: none;
@@ -523,8 +607,14 @@ span {
     #toggle:checked + .navbar {
         display: flex;
         flex-direction: column;
+
     }
     .togglearea {
         display: flex;
+
+    }
+    .togglearea img{
+        float: left;
+        height: 60px;
     }
 }

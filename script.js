@@ -1,4 +1,4 @@
-<!--js obsluga slidera-->
+//js obsluga slidera
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -40,3 +40,17 @@ closeBtn.addEventListener("click", closeModal);
 function closeModal() {
     modal.style.display = "none";
 }
+//Scroll top
+var scrollTop = document.querySelector('.scroll__top');
+window.onscroll = function(){
+   if(window.pageYOffset >= 900) {
+       scrollTop.style.display = 'block';
+   }
+   else {
+       scrollTop.style.display = 'none';
+   }
+};
+
+scrollTop.addEventListener('click', function(){
+   window.scrollTo(0, 0);
+});
