@@ -145,11 +145,12 @@
     justify-content: center;
     align-items: center;
 }
-.wrapper__image {
-    background: url('img/face2.jpg') no-repeat;
-    width: 9rem;
-    height: 9rem;
+.wrapper__image img {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
+    overflow: hidden;
 }
 .wrapper__paragraph {
     text-transform: uppercase;
