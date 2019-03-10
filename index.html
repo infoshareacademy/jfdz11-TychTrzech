@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=latin-ext"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,12 +13,7 @@
     <title>Document</title>
 </head>
 
-<style>
-
-</style>
-
 <body>
-
 <!--sekcja NAVBAR-->
 <nav class="navbar__wrapper">
     <div class="togglearea">
@@ -42,7 +36,7 @@
 
 <!--sekcja HERO-->
 <br><br>
-<div class="w3-content w3-display-container" style="max-width:100%; max-height:600px; overflow: hidden">
+<div class="w3-content w3-display-container" style="max-width:100%; max-height:600px;min-height: 75%; overflow: hidden">
     <img class="mySlides" src="img/slider2.jpg">
     <img class="mySlides" src="img/slider1.jpg">
     <img class="mySlides" src="img/slider3.jpg">
@@ -61,7 +55,9 @@
     <div class="two__image__flex__container">
         <div class="wrapper">
             <div class="wrapper__circle">
-                <div class="wrapper__image"></div>
+                <div class="wrapper__image">
+                    <img src="img/tp.png">
+                </div>
             </div>
             <p class="wrapper__paragraph">tomasz panek</p>
             <div class="wrapper__line"></div>
@@ -74,7 +70,9 @@
         </div>
         <div class="wrapper">
             <div class="wrapper__circle">
-                <div class="wrapper__image"></div>
+                <div class="wrapper__image">
+                    <img src="img/ml.png">
+                </div>
             </div>
             <p class="wrapper__paragraph">Maciej Lewandowski</p>
             <div class="wrapper__line"></div>
@@ -89,7 +87,9 @@
     <div class="two__image__flex__container">
         <div class="wrapper">
             <div class="wrapper__circle">
-                <div class="wrapper__image"></div>
+                <div class="wrapper__image">
+                    <img src="img/sk.png">
+                </div>
             </div>
             <p class="wrapper__paragraph">szymon kryński</p>
             <div class="wrapper__line"></div>
@@ -102,7 +102,9 @@
         </div>
         <div class="wrapper">
             <div class="wrapper__circle">
-                <div class="wrapper__image"></div>
+                <div class="wrapper__image">
+                    <img src="img/aj.png">
+                </div>
             </div>
             <p class="wrapper__paragraph">adrian jaskolski</p>
             <div class="wrapper__line"></div>
@@ -153,106 +155,56 @@
         <iframe class="google_map" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;
 coord=54.403143, 18.569413&amp;q=Oliwia%20Buisness%20Center+(TychTrzech)&amp;ie=UTF8&amp;t=&amp;z=14&amp;
 iwloc=B&amp;output=embed">
-    </iframe>
-</div>
-<div class="footer__line"></div>
-<div class="footer__contact">
-    <div class="footer__contactText">
-        <span class="footer__contactName">nazwa firmy sp z.o.o</span>
-        <span>ul. Grunwaldzka 264/9</span>
-        <span>80-740 Gdańsk</span>
-        <span class="footer__contactTel">+ 48 (56)765-371-009</span>
-        <span>mobile: 660-197-400</span>
-        <span class="footer__contactMail">biuro@poczta.onet.pl</span>
+        </iframe>
+    </div>
+    <div class="footer__line"></div>
+    <div class="footer__contact">
+        <div class="footer__contactText">
+            <span class="footer__contactName">nazwa firmy sp z.o.o</span>
+            <span>ul. Grunwaldzka 264/9</span>
+            <span>80-740 Gdańsk</span>
+            <span class="footer__contactTel">+ 48 (56)765-371-009</span>
+            <span>mobile: 660-197-400</span>
+            <span class="footer__contactMail">biuro@poczta.onet.pl</span>
+        </div>
+    </div>
+    <div class="footer__line"></div>
+    <div class="footer__form">
+        <h4>kontakt:</h4>
+        <div class="login">
+            <form>
+                <div class="input__group">
+                    <input type="text" name="" required="required">
+                    <span>Imię</span>
+                </div>
+                <div class="input__group">
+                    <input type="text" name="" required="required">
+                    <span>Nazwisko</span>
+                </div>
+                <div class="input__group">
+                    <input class="input__groupText" type="text" name="" required="required">
+                    <span class="input__textSpan">wiadomość</span>
+                </div>
+                <div class="input__group">
+                    <input id="button__modal" type="submit" value="wyślij">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="popup" id="Simplemodal">
+        <div class="popup__header">
+            <span id="close">&times</span>
+        </div>
+        <div class="popup__body">
+            <p>Twoja wiadomość została wysłana</p>
+            <p>dziekujemy</p>
+            <img src="" alt="">
+        </div>
+        <div class="popup__footer">
+
+        </div>
     </div>
 </div>
-<div class="footer__line"></div>
-<div class="footer__form">
-    <h4>kontakt:</h4>
-    <div class="login">
-        <form>
-            <div class="input__group">
-                <input type="text" name="" required="required">
-                <span>Imię</span>
-            </div>
-            <div class="input__group">
-                <input type="text" name="" required="required">
-                <span>Nazwisko</span>
-            </div>
-            <div class="input__group">
-                <input class="input__groupText" type="text" name="" required="required">
-                <span class="input__textSpan">wiadomość</span>
-            </div>
-            <div class="input__group">
-                <input id="button__modal" type="submit" value="wyślij">
-            </div>
-        </form>
-    </div>
-</div><div class="popup" id="Simplemodal">
-
-    <div class="popup__header">
-        <span id="close">&times</span>
-    </div>
-    <div class="popup__body">
-        <p>Twoja wiadomość została wysłana</p>
-        <p>dziekujemy</p>
-        <img src="" alt="">
-    </div>
-    <div class="popup__footer">
-
-    </div>
-</div>
-
-
-
-
-<!--js obsluga slidera-->
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-    }
-
-    function currentDiv(n) {
-        showDivs(slideIndex = n);
-    }
-
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > x.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = x.length }
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" w3-white", "");
-        }
-        x[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " w3-white";
-    }
-    setInterval(function () { plusDivs(1); }, 8000);
-
-    var modal = document.getElementById("Simplemodal");
-    var modalBtn = document.getElementById("button__modal");
-    var closeBtn = document.getElementById("close");
-
-    modalBtn.addEventListener("click", openModal);
-    function openModal() {
-        modal.style.display = "block";
-    }
-
-    closeBtn.addEventListener("click", closeModal);
-    function closeModal() {
-        modal.style.display = "none";
-    }
-
-
-
-</script>
+<script type="text/javascript" src="script.js"></script>
 </body>
-
 </html>
