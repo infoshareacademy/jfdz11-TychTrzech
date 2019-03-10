@@ -87,7 +87,6 @@
 .hero {
     width: 100%;
     height: 70vh;
-    background: url('img/hero.jpg') no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -116,8 +115,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     flex-grow: 1;
+
 }
 .two__image__flex__container{
     justify-content: space-around;
@@ -135,16 +134,80 @@
     align-items: center;
     margin: 50px 30px 0 30px;
 }
+
 .wrapper__circle {
     width: 10rem;
     height: 10rem;
-    border: 1px solid var(--thirdColor);
     border-radius: 50%;
     margin-bottom: 1rem;
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-duration: 3s;
+    animation-name: hero__picture__enter;
+
 }
+
+@-webkit-keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+@keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+
+@keyframes hero__picture__enter {
+    from { opacity: 0; width: 0; height: 0}
+    to {opacity: 1;}
+}
+
 .wrapper__image img {
     padding: 5px;
     width: 100%;
@@ -152,6 +215,12 @@
     border-radius: 50%;
     overflow: hidden;
 }
+
+.wrapper__image img:hover{
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
+}
+
 .wrapper__paragraph {
     text-transform: uppercase;
     font-weight: 500;
