@@ -27,19 +27,7 @@ function showDivs(n) {
 }
 setInterval(function () { plusDivs(1); }, 8000);
 
-var modal = document.getElementById("Simplemodal");
-var modalBtn = document.getElementById("button__modal");
-var closeBtn = document.getElementById("close");
 
-modalBtn.addEventListener("click", openModal);
-function openModal() {
-    modal.style.display = "block";
-}
-
-closeBtn.addEventListener("click", closeModal);
-function closeModal() {
-    modal.style.display = "none";
-}
 //Scroll top
 var scrollTop = document.querySelector('.scroll__top');
 window.onscroll = function(){
@@ -53,4 +41,11 @@ window.onscroll = function(){
 
 scrollTop.addEventListener('click', function(){
    window.scrollTo(0, 0);
+});
+//Formularz kontaktowy
+var toggle = document.querySelector('.toggle');
+       var sidebar = document.querySelector('.sidebar__contact')
+       toggle.addEventListener('click', function(){
+            sidebar.classList.toggle('active');
+            toggle.classList.toggle('active');
 });
