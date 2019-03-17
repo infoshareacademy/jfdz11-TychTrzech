@@ -39,17 +39,16 @@ html{
 .navbar {
     background-color: #3953ff;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .navbar img{
 height: 62px;
-justify-self: flex-start;
-  padding:0;
+  
 }
 .logo__link{
 padding: 0;
-
+    
 }
 .navbar a {
     color: #fff;
@@ -70,11 +69,11 @@ padding: 0;
     display: none;
 }
 .togglearea {
-    background-color: #333;
+    background-color: #3953ff;
     color: #fff;
     padding: 10px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 .togglearea label {
     background-color: #fff;
@@ -133,46 +132,45 @@ padding: 0;
 
 /*SEKCJA DETAILS*/
 .article__flex__container{
+    width: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     height: auto;
     display:flex;
+    flex-wrap: wrap;
     flex-grow: 1;
     justify-content: space-around;
-    flex-wrap: wrap;
+    
 }
 
 h2{
     font-weight: bold;
 }
 .article__flex__item__container{
-    display: flex;
-    flex-direction: column;
-    max-width: 40%;
-    min-width: 300px;
+
+display: flex;
+flex-direction: column;
+width: 40%;
+
 }
 
 header{
+    
     font-size: 2.7rem;
     margin: 10px 0 10px 0;
 }
 
 .title{
+    
     text-align: center;
-}
-
-.title img{
-    height: 8em;
-    width: 8em;
-    padding: 1em;
+    
 }
 
 .title p{
     text-align: center;
     font-size: 1.7rem;
     text-align: justify;
-    word-break-wrap: 1;
 }
 
 
@@ -213,8 +211,9 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-name: hero__picture__enter;
+
 }
 
 @-webkit-keyframes vibrate-1 {
@@ -372,17 +371,17 @@ header{
 }
 .footer {
     width: 100%;
-    height: 390px;
+    height: auto;
     background-color: rgba(41, 39, 39, 0.966);
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    position: relative;
+    padding: 30px;
+    
 }
-.footer__line {
-    width:1px;
-    height: 50%;
-    background-color: rgba(255, 255, 255, 0.205);
+.footer__copyright {
+    color: #fff;
+    width: 400px;
+    text-align: center;
 }
 .footer__address {
     width: 400px;
@@ -415,168 +414,8 @@ span {
     text-transform: uppercase;
     color: rgb(209, 88, 88);
 }
-.footer__contactName::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 9px;
-    bottom: 0;
-    left: -130px;
-    right: 0;
-}
-.footer__contactTel::before {
-    content: url('images/003-phone.png');
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -40px;
-    right: 0;
-}
-.footer__contactMail::before {
-    content: url('images/arroba.png');
-    display: block;
-    position: absolute;
-    top: 220px;
-    bottom: 0;
-    left: -40px;
-    right: 0;
-}
-/* formularz*/
-.footer__form {
-    width: 400px;
-    height: 280px;
-}
-.footer__form h4 {
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 3px;
-}
-.login {
-    text-align: center;
-    width: 350px;
-    box-sizing: border-box;
-    padding: 40px;
-    margin: 0 auto;
-}
-.login .input__group {
-    position: relative;
-    width: 100%;
-    margin-bottom: 10px;
-}
-.login .input__group input {
-    height: 40px;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-    font-size: 18px;
-    outline: none;
-    border: 1px solid rgba(0, 0, 0, 0.377);
-    border-radius: 7px;
-    background-color: rgb(209, 88, 88);
-}
-.login .input__group .input__groupText {
-    height: 80px;
-}
-.login .input__group span {
-    position: absolute;
-    top: 5px;
-    left: 20px;
-    padding: 0;
-    transition: .5s;
-    pointer-events: none;
-    text-transform: uppercase;
-    font-size: 12px;
-    color: rgb(255, 255, 255)
-}
-.login .input__group input:focus ~ span {
-    top: -11px;
-    left: 15px;
-    font-size: 10px;
-    padding: 2px;
-}
-.login .input__group input[type="submit"] {
-    text-transform: uppercase;
-    cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    padding: 0;
-    height: 30px;
-    float: left;
-    font-size: 12px;
-    border-radius: 0;
-    color: rgb(209, 88, 88);
-    font-weight: bold;
-    transition: background-color .3s linear;
-    letter-spacing: 2px;
-}
-.login .input__group input[type="submit"]:hover {
-    background-color: rgba(255, 255, 255, 0.822);
-}
 
 
-
-/*popup*/
-.popup {
-    width: 300px;
-    max-height: 150px;
-    background-color: rgb(224, 224, 224);
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 15px 0px #000000;
-    box-shadow: 0px 0px 15px 0px #000000;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    right: 0;
-    display: none;
-    animation-name: modal__animation;
-    animation-duration: 1s;
-
-
-}
-@keyframes modal__animation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.popup__header span {
-    color: #000;
-    float: right;
-
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 25px;
-}
-.popup__body {
-    padding-top: 30px;
-}
-.popup__body p {
-    text-align: center;
-    color: rgb(146, 146, 146);
-
-}
-.footer__top {
-    position: relative;
-}
-.triangle {
-    width: 30px;
-    height: 30px;
-    background-color: rgb(209, 88, 88);
-    -webkit-clip-path: polygon(50% 54%, 0 79%, 100% 79%);
-    clip-path: polygon(50% 54%, 0 79%, 100% 79%);
-    transform: rotate(180deg);
-    position: absolute;
-    left: 50%;
-    top: 19px;
-    bottom: 0;
-    right: 0;
-}
 
 .google_map{
     width: 100%;
@@ -596,12 +435,82 @@ span {
     font-size: 2rem;
     border-radius: 50%;
     display: none;
-    cursor: pointer;
-
+    cursor: pointer; 
+    color: #fff;
  }
+.fa-angle-up {
+    background: rgba(255, 255, 255,0);
+    font-size: 36px;
+    text-align: center;
+}
+/* formularz kontaktowy */
+.sidebar__contact {
+    position: fixed;
+    top: 50%;
+    left: -350px;
+    transform: translateY(-50%);
+    width: 350px;
+    height: auto;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(0,0,0,.5);
+    box-sizing: border-box;
+    transition: .5s linear;
+}
+.sidebar__contact.active {
+    left: 0;
+}
+.sidebar__contact input,
+.sidebar__contact textarea
+ {
+    width: 100%;
+    height: 36px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.5);
+    outline: none;
+}
+.sidebar__contact textarea {
+    height: 60px;
+    resize: none;
+}
+.sidebar__contact input[type='submit']{
+    background: #00bcd4;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-style: 18px;
+}
+.toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 350px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    background: #f00;
+}
+.toggle:before {
+    content: "\f003";
+    font-family: 'fontAwesome';
+    color: #fff;
+    font-size: 18px;
+}
+.toggle.active:before  {
+    content: "\f00d";
+}
+@media screen and (max-width:696px){
 
+}
 @media screen and (max-width:873px){
     .navbar {
+        display: none;
+    }
+    .navbar img {
         display: none;
     }
     #toggle:checked + .navbar {
@@ -616,5 +525,21 @@ span {
     .togglearea img{
         float: left;
         height: 60px;
+    }
+    .footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__copyright {
+        order: 1;
+        padding: 20px 0;
+    }
+    .footer__address {
+        order: 3;
+    }
+    .footer__contact {
+        order: 2;
     }
 }
