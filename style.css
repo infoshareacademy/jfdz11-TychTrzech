@@ -15,7 +15,7 @@ html{
     box-sizing: border-box;
 }
 
-.kontener{
+.kontener {
     overflow: hidden;
 }
 
@@ -44,11 +44,11 @@ html{
 
 .navbar img{
 height: 62px;
-  
+
 }
 .logo__link{
 padding: 0;
-    
+
 }
 .navbar a {
     color: #fff;
@@ -376,7 +376,7 @@ header{
     display: flex;
     justify-content: space-around;
     padding: 30px;
-    
+
 }
 .footer__copyright {
     color: #fff;
@@ -435,7 +435,7 @@ span {
     font-size: 2rem;
     border-radius: 50%;
     display: none;
-    cursor: pointer; 
+    cursor: pointer;
     color: #fff;
  }
 .fa-angle-up {
