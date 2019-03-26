@@ -4,62 +4,56 @@
     box-sizing: border-box;
     text-align: center;
 }
-/*
-    info section
- */
-#info{
-    background-color: #fc96ff;
-    font-size: 5em;
+/* info section */
+#info {
+    font-size: 1.5rem;
 }
-
 button {
-    background-color: #8b9bff;
-    font-size: 2em;
-    width: 5em;
-    height: 2em;
+    border: 1px solid rgba(153, 153, 153, 0.445);
+    font-size: 1em;
+    padding: 10px 20px;
+    background: #fff;
+    margin: 0 5px 5px 0;
+    border-radius: 3px;
+    color: rgba(153, 153, 153, 0.911);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .5s ease-in-out;
 }
-
-#info p{
-    height: 100%;
+button:hover {
+    background: rgba(214, 214, 214, 0.212);
 }
-
-.scoreboard{
-    font-size: 2em;
+.scoreboard {
+    font-size: 1.2rem;
+    border: 1px solid rgba(153, 153, 153, 0.014);
+    padding: 5px 50px;
+    margin: 5px auto;
+    color: rgba(153, 153, 153, 0.911);
 }
-/*
-    game cards section
- */
-.flex__container{
-    height: 100vh;
+/*game cards section*/
+.flex__container {
+    padding: 10px;
     display: flex;
-    flex-direction: row;
-}
-
-.flex__wrapper__1{
-    width: 30%;
-}
-
-.flex__wrapper__2{
-    width: 70%;
-    justify-items: center;
-}
-.content {
-    margin: auto;
-    width: 600px;
-    height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
-
+.flex__wrapper__1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content {
+    margin: 10px 0 0 0;
+    width: 550px;
+    height: 550px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4,1fr);
+}
 .content div {
-    width: 25%;
-    height: 25%;
-    border: 3px solid #fff;
     border-radius: 6px;
 }
-
 .star1 {
     background: url('img/star__1.jpeg');
     background-size: cover;
@@ -119,3 +113,30 @@ button {
     background-position: center;
     transition: all .9s ease-in-out;
 }
+@media (min-width: 466px) and (max-width: 570px) {
+    .content {
+        width: 450px;
+        height: 450px;
+    }
+}
+@media (max-width: 465px) {
+    .content {
+        width: 310px;
+        height: 310px;
+    }
+    #info {
+        font-size: 1rem;
+    }
+    button {
+        border: 1px solid rgba(153, 153, 153, 0.445);
+        font-size: .8rem;
+        padding: 5px 10px;
+    }
+    .scoreboard {
+        font-size: 1rem;
+        padding: 5px 30px;
+    }
+}
+
+
+

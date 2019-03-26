@@ -49,3 +49,26 @@ var toggle = document.querySelector('.toggle');
             sidebar.classList.toggle('active');
             toggle.classList.toggle('active');
 });
+//Menu active
+
+let header = document.getElementById("navbar__active");
+let btns = header.getElementsByClassName("btn");
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  let current = document.getElementsByClassName("active__btn");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active__btn", "");
+  }
+  this.className += " active__btn";
+  });
+}
+
+let nav = document.querySelector('.navbar');
+    window.addEventListener('scroll', () =>{
+        if(window.scrollY){
+            nav.classList.add('scroll');
+        }
+        else {
+            nav.classList.remove('scroll');
+        }
+    });
