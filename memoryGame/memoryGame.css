@@ -30,6 +30,61 @@ button:hover {
     margin: 5px auto;
     color: rgba(153, 153, 153, 0.911);
 }
+/*start popuup css */
+
+
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+#xmas-popup .popup-content{
+    width: 600px;
+    height: 600px;
+    margin: 70px auto ;
+    position: relative;
+    border: 3px solid rgba(153, 153, 153, 0.445);
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: rgba(153, 153, 153, 0.911);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 15px;
+}
+.close{
+    position: absolute;
+    top:5px;
+    right:5px;
+    background: rgb(68, 24, 24);
+    border-radius: 50%;
+    border: 3px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    line-height: 0;
+    width: 20px;
+    padding: 9px 0 11px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: rgba(153, 153, 153, 0.911);
+}
+.popup:target{
+    display:block;
+}
+/*end pupup css */
+
+
 /*game cards section*/
 .flex__container {
     padding: 10px;
