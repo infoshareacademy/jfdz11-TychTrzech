@@ -22,23 +22,42 @@ const buttonStop = document.getElementById('button__stop');
 let gameTime = 0;
 let timerIntervalTimer;
 
-buttonStart.addEventListener('click', start);
+function Timer(buttonStart, buttonStop, info){
+    this.gameTime = 0;
+    this.buttonStart = buttonStart;
+    this.buttonStop = buttonStop;
+    this.info = info; 
+    this.timeInterval = null;
+
+    this.start = () => {
+        this.buttonStart.removeEventListener('click', this.start);
+        this.timeInterval = setInterval(() =>  {
+            this.gameTime += 0.01;
+            this.info.textContent = this.gameTime.toFixed(2);
+        },10);
+    }
+
+    this.stop = () => {
+        clearInterval(this.timeInterval);
+        this.buttonStart.addEventListener('click', this.start);
+    }
+
+    this.getCurrentTime = () => {
+        return this.gameTime;
+    }
+
+    this.setCurrentTime = (time) => {
+        this.gameTime = time;
+    }
+
+    this.start = this.start.bind(this);
+}
+const timer = new Timer( document.getElementById('button__start'), document.getElementById('button__stop'),  document.getElementById("infooop"));
+
+buttonStart.addEventListener('click', timer.start);
 buttonStart.addEventListener('click', memoryGame);
-buttonStop.addEventListener('click', stop);
+buttonStop.addEventListener('click', timer.stop);
 
-
-function start() {
-    buttonStart.removeEventListener('click', start);
-    timerIntervalTimer = setInterval(function timer() {
-        gameTime += 0.01;
-        document.getElementById("info").textContent = gameTime.toFixed(2);
-    },10);
-}
-
-function stop() {
-    clearInterval(timerIntervalTimer);
-    buttonStart.addEventListener('click', start);
-}
 /********************************************************************************************************/
 
 function memoryGame() {
