@@ -1,8 +1,8 @@
 const pornStarTiles = ['star1', 'star1', 'star2', 'star2', 'star3', 'star3', 'star4', 'star4', 'star5', 'star5', 'star6', 'star6', 'star7', 'star7', 'star8', 'star8'];
-//const pornStarTiles = ['star1', 'star1', 'star2', 'star2'];
-let cards = document.querySelectorAll(".content div");
-cards = [...cards];
-
+// const pornStarTiles__2 = ['star1', 'star1', 'star2', 'star2', 'star3', 'star3', 'star4', 'star4', 'star5', 'star5', 'star6', 'star6', 'star7', 'star7', 'star8', 'star8','star9', 'star9', 'star10', 'star10'];
+// const pornStarTiles = [];
+let cards = [];
+let gameFinishScore 
 let scoreboardArray = JSON.parse(localStorage.getItem('scoreboardArray'));
 if (scoreboardArray === null){
     scoreboardArray = [];
@@ -35,24 +35,28 @@ function Timer(buttonStart, buttonStop, info){
             this.gameTime += 0.01;
             this.info.textContent = this.gameTime.toFixed(2);
         },10);
-    }
+    };
 
     this.stop = () => {
         clearInterval(this.timeInterval);
         this.buttonStart.addEventListener('click', this.start);
-    }
+    };
 
     this.getCurrentTime = () => {
         return this.gameTime;
-    }
+    };
 
     this.setCurrentTime = (time) => {
         this.gameTime = time;
-    }
+    };
+
+    this.finish = () => {
+        clearInterval(this.timeInterval);
+    };
 
     this.start = this.start.bind(this);
 }
-const timer = new Timer( document.getElementById('button__start'), document.getElementById('button__stop'),  document.getElementById("infooop"));
+const timer = new Timer( document.getElementById('button__start'), document.getElementById('button__stop'),  document.getElementById("info"));
 
 buttonStart.addEventListener('click', timer.start);
 buttonStart.addEventListener('click', memoryGame);
@@ -64,7 +68,7 @@ function memoryGame() {
     buttonStart.removeEventListener('click', memoryGame);
     let activeCard = "";
     const activeCards = [];
-    const gameFinishScore = cards.length / 2;
+    
     let gameResult = 0;
 
     const clickCard = function () {
@@ -83,7 +87,7 @@ function memoryGame() {
                     if (activeCards[0].className === activeCards[1].className) {
                         activeCards.forEach(card => card.classList.add("victory"));
                         gameResult++;
-                        cards = cards.filter(card => !card.classList.contains("victory"));
+                        cards = cards.filter(card => !card.classList.contains("victory"));console.log(gameFinishScore + "win");
                         if (gameResult === gameFinishScore){
                             win();
                         }
@@ -95,6 +99,7 @@ function memoryGame() {
                     cards.forEach(card => card.addEventListener("click", clickCard))
                 }, 800)
         }
+
     };
 
     function refreshScoreboard(newFinishTime) {
@@ -108,8 +113,8 @@ function memoryGame() {
     }
 
     function win() {
-        clearInterval(timerIntervalTimer);
-        let finishTime = gameTime.toFixed(2);
+        timer.finish();
+        let finishTime = timer.getCurrentTime().toFixed(2);
         document.getElementById("info").textContent = 'YOUR TIME: ' + finishTime + 's';
         refreshScoreboard(finishTime);
         buttonStart.addEventListener('click', () => {location.reload();});
@@ -118,6 +123,10 @@ function memoryGame() {
 
 
     const init = function () {
+
+
+
+        cards = [...document.querySelectorAll(".content div")];
         cards.forEach(card => {
             const position = Math.floor(Math.random() * pornStarTiles.length);
             card.classList.add(pornStarTiles[position]);
@@ -131,3 +140,31 @@ function memoryGame() {
 
     init();
 }
+
+/**********************************************Next lvl****************************************************/
+
+let check__1 = document.getElementById("Poziom1");
+let check__2 = document.getElementById("Poziom2");
+
+let content__2 = document.getElementById("contentDiv");
+
+function newCheck (){
+    for(var i = 0; i < 4; i++){
+    let nextDiv = document.createElement('div');
+    content__2.appendChild(nextDiv);
+    }
+    pornStarTiles.push('star9', 'star9', 'star10', 'star10');
+    console.log(pornStarTiles);
+    gameFinishScore = cards.length / 2;
+    console.log(gameFinishScore);
+};
+
+check__2 = document.getElementById("Poziom2").addEventListener("click", newCheck);
+
+
+
+
+
+
+
+
