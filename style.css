@@ -214,6 +214,16 @@ header{
     text-align: justify;
     word-break-wrap: 1;
 }
+.box5 {
+    padding-top: 34px;
+    padding-bottom: 15px;
+}
+
+.box6 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+
+}
 /* sekcja zdjecia*/
 .team__image__flex__container {
     display: flex;
