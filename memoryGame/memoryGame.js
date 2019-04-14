@@ -21,15 +21,18 @@ const buttonStart = document.getElementById('button__start');
 const buttonStop = document.getElementById('button__stop');
 let gameTime = 0;
 let timerIntervalTimer;
+// ***********//
 
-function Timer(buttonStart, buttonStop, info){
-    this.gameTime = 0;
-    this.buttonStart = buttonStart;
-    this.buttonStop = buttonStop;
-    this.info = info; 
-    this.timeInterval = null;
+class Timer{
+    constructor(buttonStart, buttonStop, info) {
+        this.gameTime = 0;
+        this.buttonStart = buttonStart;
+        this.buttonStop = buttonStop;
+        this.info = info; 
+        this.timeInterval = null;    
+    }
 
-    this.start = () => {
+    start() {
         this.buttonStart.removeEventListener('click', this.start);
         this.timeInterval = setInterval(() =>  {
             this.gameTime += 0.01;
@@ -37,30 +40,31 @@ function Timer(buttonStart, buttonStop, info){
         },10);
     };
 
-    this.stop = () => {
+    stop() {
         clearInterval(this.timeInterval);
         this.buttonStart.addEventListener('click', this.start);
     };
 
-    this.getCurrentTime = () => {
+    getCurrentTime()  {
         return this.gameTime;
     };
 
-    this.setCurrentTime = (time) => {
+    setCurrentTime(time) {
         this.gameTime = time;
     };
 
-    this.finish = () => {
+    finish() {
         clearInterval(this.timeInterval);
     };
-
-    this.start = this.start.bind(this);
 }
+
+
+
 const timer = new Timer( document.getElementById('button__start'), document.getElementById('button__stop'),  document.getElementById("info"));
 
-buttonStart.addEventListener('click', timer.start);
+buttonStart.addEventListener('click', () => {timer.start()});
 buttonStart.addEventListener('click', memoryGame);
-buttonStop.addEventListener('click', timer.stop);
+buttonStop.addEventListener('click', () => {timer.stop()});
 
 /********************************************************************************************************/
 

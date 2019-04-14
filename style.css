@@ -12,6 +12,51 @@ html{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
+/* ********************************COOCKIES************** */
+.popup-container{
+    
+    
+
+}
+
+.cookie-popup{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 blue;
+    padding: 30px;
+    z-index: 2;
+    background: #CCCCCC;
+    position: fixed;
+}
+
+.cookie-popup h1{
+    font-size: 48px;
+    letter-spacing: 0.08em;
+}
+
+.popup-close {
+    text-align: right;
+}
+
+.cookie-popup p{
+color: gray;
+}
+
+.cookie-popup button{
+    color: white;
+    border: 1px solid black;
+    background: black;
+    border-radius: 100px;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+/* ******************************************* */
 .kontener{
     overflow: hidden;
 }
