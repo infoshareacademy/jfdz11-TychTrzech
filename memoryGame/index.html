@@ -37,7 +37,7 @@
             </div>
          </div>
         <!-- end popuup code-->
-        
+
 <!--game cards grid-->
 <div class="flex__container">
     <div class=flex__wrapper__1>
@@ -52,19 +52,16 @@
             Quit
             </button>
             <button>
-              <a href="#xmas-popup">Instruction</a>  
-             </button> 
+              <a href="#xmas-popup">Instruction</a>
+             </button>
+            <button id='button__bonus'>
+                Bonus timer
+            </button>
           </div>
         <!--timer start-->
         <div id="info">
             <p>
-                
-            </p>
-        </div>
 
-        <div id="infooop">
-            <p>
-                
             </p>
         </div>
 
@@ -98,5 +95,26 @@
     </div>
 </div>
 <script src="memoryGame.js"></script>
+    <audio controls="controls" autoplay loop="loop">
+        <source src="sounds/111.mp3" type="audio/ogg" />
+    </audio>
+    <audio id="coin">
+        <source src="sounds/Mario-coin-sound.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="audio1">
+        <source src="sounds/doublekill.wav" type="audio/mpeg" />
+    </audio>
+    <audio id="audio2">
+        <source src="sounds/unstoppable.wav" type="audio/mpeg" />
+    </audio>
+    <audio id="audio3">
+        <source src="sounds/rampage.wav" type="audio/mpeg" />
+    </audio>
+    <audio id="audio4">
+        <source src="sounds/monsterkill.wav" type="audio/mpeg" />
+    </audio>
+    <audio id="audio5">
+        <source src="sounds/winner.wav" type="audio/mpeg" />
+    </audio>
 </body>
 </html>
