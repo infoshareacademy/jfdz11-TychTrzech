@@ -54,13 +54,13 @@
             <button>
               <a href="#xmas-popup">Instruction</a>
              </button>
-            <button id='button__bonus'>
-                Bonus timer
-            </button>
           </div>
         <!--timer start-->
         <div id="info">
             <p>
+
+            </p>
+        </div>
 
             </p>
         </div>
@@ -74,7 +74,7 @@
         </div>
     </div>
     <div class="flex__wrapper__2">
-        <section class="content">
+        <section class="content" id="contentDiv">
             <div></div>
             <div></div>
             <div></div>
@@ -93,6 +93,14 @@
             <div></div>
         </section>
     </div>
+    <form action="">
+        <input id ="Poziom1" type="radio" name="lvl" value="first" checked='checked'>Poziom 1<br>
+        <input id ="Poziom2" type="radio" name="lvl" value="second" onClick="this.disabled = true;"> Poziom 2<br>
+      </form>
+
+    <!-- <button id = "nextLvl" onClick="this.disabled = true;">
+        Next lvl
+    </button> -->
 </div>
 <script src="memoryGame.js"></script>
     <audio controls="controls" autoplay loop="loop">

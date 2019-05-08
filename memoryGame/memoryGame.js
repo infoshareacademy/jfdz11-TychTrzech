@@ -212,3 +212,22 @@ function memoryGame() {
 
     init();
 }
+/**********************************************Next lvl****************************************************/
+
+let check__1 = document.getElementById("Poziom1");
+let check__2 = document.getElementById("Poziom2");
+
+let content__2 = document.getElementById("contentDiv");
+
+function newCheck (){
+    for(let i = 0; i < 4; i++){
+        let nextDiv = document.createElement('div');
+        content__2.appendChild(nextDiv);
+    }
+    pornStarTiles.push('star9', 'star9', 'star10', 'star10');
+    console.log(pornStarTiles);
+    let gameFinishScore = cards.length / 2;
+    console.log(gameFinishScore);
+};
+
+check__2 = document.getElementById("Poziom2").addEventListener("click", newCheck);

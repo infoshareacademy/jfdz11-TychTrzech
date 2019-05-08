@@ -157,6 +157,22 @@ a{
     background-position: center;
     transition: all .5s ease-in-out;
 }
+.star9 {
+    background: url('img/star__9.jpeg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s ease-in-out;
+}
+
+.star10 {
+    background: url('img/star__10.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s ease-in-out;
+}
+
+
+
 .victory {
     background: url('img/back__2.png');
     background-size: cover;
