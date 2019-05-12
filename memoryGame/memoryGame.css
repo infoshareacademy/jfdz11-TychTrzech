@@ -98,6 +98,11 @@ a{
     align-items: center;
     flex-direction: column;
 }
+.flex__wrapper__2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 .content {
     margin: 10px 0 0 0;
     width: 550px;
@@ -108,6 +113,8 @@ a{
 }
 .content div {
     border-radius: 6px;
+    
+    
 }
 .star1 {
     background: url('img/star__1.jpeg');
