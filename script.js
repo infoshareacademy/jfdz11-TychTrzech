@@ -1,4 +1,4 @@
-//js obsluga slidera
+// Slider
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -28,7 +28,7 @@ function showDivs(n) {
 setInterval(function () { plusDivs(1); }, 8000);
 
 
-//Scroll top
+// Scroll top
 var scrollTop = document.querySelector('.scroll__top');
 window.onscroll = function(){
    if(window.pageYOffset >= 900) {
@@ -42,15 +42,16 @@ window.onscroll = function(){
 scrollTop.addEventListener('click', function(){
    window.scrollTo(0, 0);
 });
-//Formularz kontaktowy
+
+// Contact form
 var toggle = document.querySelector('.toggle');
        var sidebar = document.querySelector('.sidebar__contact')
        toggle.addEventListener('click', function(){
             sidebar.classList.toggle('active');
             toggle.classList.toggle('active');
 });
-//Menu active
 
+// Menu active
 let header = document.getElementById("navbar__active");
 let btns = header.getElementsByClassName("btn");
 for (let i = 0; i < btns.length; i++) {
@@ -72,7 +73,8 @@ let nav = document.querySelector('.navbar');
             nav.classList.remove('scroll');
         }
     });
-// *************************COCKIES***************************
+
+// Cookies
     function setCookie(name, value, days) {
         var date = new Date();
         date.setTime(date.getTime() + (days*24*60*60*1000));
