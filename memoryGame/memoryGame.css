@@ -32,7 +32,9 @@ button:hover {
 }
 /*start popuup css */
 
-
+form{
+    margin-bottom: 30px;
+}
 
 .popup{
     position: fixed;
@@ -45,7 +47,7 @@ button:hover {
 
 #xmas-popup .popup-content{
     width: 600px;
-    height: 600px;
+    height: 300px;
     margin: 70px auto ;
     position: relative;
     border: 3px solid rgba(153, 153, 153, 0.445);
@@ -56,22 +58,22 @@ button:hover {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    color: rgba(153, 153, 153, 0.911);
+    color: black;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 15px;
 }
 .close{
+    height: 10px;
+    width: 25px;
     position: absolute;
     top:5px;
     right:5px;
-    background: rgb(68, 24, 24);
+    background: black;
     border-radius: 50%;
     border: 3px solid #fff;
     color: #fff;
-    text-decoration: none;
     line-height: 0;
-    width: 20px;
     padding: 9px 0 11px;
     text-align: center;
 }
@@ -191,11 +193,17 @@ a{
     background-position: center;
     transition: all .9s ease-in-out;
 }
-@media (min-width: 466px) and (max-width: 570px) {
+@media (min-width: 466px) and (max-width: 635px) {
     .content {
         width: 450px;
         height: 450px;
     }
+    #xmas-popup .popup-content{
+        width: 200px;
+        height: auto;
+        margin-bottom: 150px;
+    }
+
 }
 @media (max-width: 465px) {
     .content {
@@ -215,6 +223,7 @@ a{
         padding: 5px 30px;
     }
 }
+
 
 
 

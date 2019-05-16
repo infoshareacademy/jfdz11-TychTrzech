@@ -152,6 +152,14 @@ const bonus = new BonusTime(document.getElementById("button__bonus"));
 /********************************************************************************************************/
 
 function memoryGame() {
+  let poziom1 = document.getElementById('Poziom1');
+  let poziom2 = document.getElementById('Poziom2');
+console.log('poziom2')
+  poziom1.setAttribute('disabled', '');
+  poziom2.setAttribute('disabled', '');
+  
+
+
   buttonStart.removeEventListener("click", memoryGame);
   let activeCard = "";
   const activeCards = [];
@@ -220,7 +228,7 @@ function memoryGame() {
       location.reload();
     });
   };
-
+  
   const init = function() {
     cards.forEach(card => {
       const position = Math.floor(Math.random() * pornStarTiles.length);
@@ -253,8 +261,31 @@ function newCheck() {
   console.log(gameFinishScore);
   const newCards = document.querySelectorAll(".content div");
   cards = [...newCards];
+  Poziom2.setAttribute('disabled', '');
+ 
 }
 
 check__2 = document
   .getElementById("Poziom2")
-  .addEventListener("click", newCheck);
+  .addEventListener("click", newCheck)
+
+
+  check__1 = document
+  .getElementById("Poziom1")
+  .addEventListener('click', function(){
+  Poziom1.setAttribute('disabled', '')
+    location.reload();
+        let enablePoziom2 = document.getElementById('Poziom2')    
+        enablePoziom2.removeAttribute('disabled', '');
+  
+  }
+  );
+  
+
+
+
+
+
+
+
+ 
