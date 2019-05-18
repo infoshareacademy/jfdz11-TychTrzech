@@ -179,9 +179,6 @@ a{
     background-position: center;
     transition: all .5s ease-in-out;
 }
-
-
-
 .victory {
     background: url('img/back__2.png');
     background-size: cover;
@@ -192,6 +189,18 @@ a{
     background: url('img/front__2.png');background-size: cover;
     background-position: center;
     transition: all .9s ease-in-out;
+}
+#buttonLevel_1 {
+    display: none;
+}
+#buttonLevel_2 {
+    display: none;
+}
+#buttonLevel_3 {
+    display: none;
+}
+#buttonLevel_4 {
+    display: none;
 }
 @media (min-width: 466px) and (max-width: 635px) {
     .content {

@@ -16,7 +16,7 @@ const pornStarTiles = [
   "star8",
   "star8"
 ];
-// const pornStarTiles = ['star1', 'star1', 'star2', 'star2',  'star3', 'star3','star4', 'star4' , 'star5', 'star5'];
+
 let cards = document.querySelectorAll(".content div");
 cards = [...cards];
 
@@ -152,14 +152,10 @@ const bonus = new BonusTime(document.getElementById("button__bonus"));
 /********************************************************************************************************/
 
 function memoryGame() {
-  let poziom1 = document.getElementById('Poziom1');
-  let poziom2 = document.getElementById('Poziom2');
-console.log('poziom2')
-  poziom1.setAttribute('disabled', '');
-  poziom2.setAttribute('disabled', '');
-  
-
-
+  let check__1 = document.getElementById("Poziom1");
+  let check__2 = document.getElementById("Poziom2");
+  check__1.setAttribute('disabled','');
+  check__2.setAttribute('disabled','');
   buttonStart.removeEventListener("click", memoryGame);
   let activeCard = "";
   const activeCards = [];
@@ -228,7 +224,7 @@ console.log('poziom2')
       location.reload();
     });
   };
-  
+
   const init = function() {
     cards.forEach(card => {
       const position = Math.floor(Math.random() * pornStarTiles.length);
@@ -245,41 +241,46 @@ console.log('poziom2')
 }
 /**********************************************Next lvl****************************************************/
 
-let check__1 = document.getElementById("Poziom1");
-let check__2 = document.getElementById("Poziom2");
+let buttonLevel_1 = document.querySelector('#buttonLevel_1');
+let buttonLevel_2 = document.querySelector('#buttonLevel_2');
+let buttonLevel_3 = document.querySelector('#buttonLevel_3');
+let buttonLevel_4 = document.querySelector('#buttonLevel_4');
 
 let content__2 = document.getElementById("contentDiv");
 
 function newCheck() {
-  for (let i = 0; i < 4; i++) {
-    let nextDiv = document.createElement("div");
-    content__2.appendChild(nextDiv);
-  }
+ 
+  buttonLevel_1.style.display = 'block';
+  buttonLevel_2.style.display = 'block';
+  buttonLevel_3.style.display = 'block';
+  buttonLevel_4.style.display = 'block';
+
+
   pornStarTiles.push("star9", "star9", "star10", "star10");
-  console.log(pornStarTiles);
+  if(pornStarTiles.length > 20){
+    pornStarTiles.splice(20,4)
+}
+  console.log(content__2)
   let gameFinishScore = cards.length / 2;
   console.log(gameFinishScore);
   const newCards = document.querySelectorAll(".content div");
   cards = [...newCards];
-  Poziom2.setAttribute('disabled', '');
- 
+  if (cards.length > 20){
+    cards.splice(20,cards.length);
+   
+  }
+  console.log(cards);
 }
 
 check__2 = document
   .getElementById("Poziom2")
-  .addEventListener("click", newCheck)
+  .addEventListener("click", newCheck);
 
 
-  check__1 = document
-  .getElementById("Poziom1")
-  .addEventListener('click', function(){
-  Poziom1.setAttribute('disabled', '')
-    location.reload();
-        let enablePoziom2 = document.getElementById('Poziom2')    
-        enablePoziom2.removeAttribute('disabled', '');
+ 
+
+ 
   
-  }
-  );
   
 
 
