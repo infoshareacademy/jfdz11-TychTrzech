@@ -33,11 +33,6 @@ setInterval(function() {
   plusDivs(1);
 }, 8000);
 
-
-
-
-
-
 // Scroll top
 var scrollTop = document.querySelector(".scroll__top");
 window.onscroll = function() {
@@ -51,9 +46,6 @@ window.onscroll = function() {
 scrollTop.addEventListener("click", function() {
   window.scrollTo(0, 0);
 });
-
-
-
 
 // Contact form
 var toggle = document.querySelector(".toggle");
@@ -85,35 +77,31 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
 // Scrool Active button
-let btn_1 = document.getElementById('btn_1');
-let btn_2 = document.getElementById('btn_2');
-let btn_3 = document.getElementById('btn_3');
-let btn_4 = document.getElementById('btn_4');
+let btn_1 = document.getElementById("btn_1");
+let btn_2 = document.getElementById("btn_2");
+let btn_3 = document.getElementById("btn_3");
+let btn_4 = document.getElementById("btn_4");
 
-window.onscroll = function(){
-  console.log(window.pageYOffset)
-  if(window.pageYOffset >= 740){
-    btn_1.classList.add('active__btn');
-    btn_2.classList.remove('active__btn');
+window.onscroll = function() {
+  console.log(window.pageYOffset);
+  if (window.pageYOffset >= 740) {
+    btn_1.classList.add("active__btn");
+    btn_2.classList.remove("active__btn");
   }
-  if (window.pageYOffset <= 720){
-    btn_1.classList.remove('active__btn');
+  if (window.pageYOffset <= 720) {
+    btn_1.classList.remove("active__btn");
   }
-  if(window.pageYOffset >= 1259) {
-    btn_1.classList.remove('active__btn')
-    btn_2.classList.add('active__btn')
-    btn_3.classList.remove('active__btn')
+  if (window.pageYOffset >= 1259) {
+    btn_1.classList.remove("active__btn");
+    btn_2.classList.add("active__btn");
+    btn_3.classList.remove("active__btn");
   }
-  if (window.pageYOffset >= 2566) {
-    btn_2.classList.remove('active__btn')
-    btn_3.classList.add('active__btn')
+  if (window.pageYOffset >= 2393) {
+    btn_2.classList.remove("active__btn");
+    btn_3.classList.add("active__btn");
   }
-}
-
-
-
+};
 
 // Cookies
 let cookie = document.querySelector(".accept-cookies");
