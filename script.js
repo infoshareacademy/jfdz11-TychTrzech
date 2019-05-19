@@ -86,6 +86,7 @@ let btn_4 = document.getElementById("btn_4");
 window.onscroll = function() {
   console.log(window.pageYOffset);
   if (window.pageYOffset >= 740) {
+    console.log(pageYOffset);
     btn_1.classList.add("active__btn");
     btn_2.classList.remove("active__btn");
   }
@@ -97,7 +98,7 @@ window.onscroll = function() {
     btn_2.classList.add("active__btn");
     btn_3.classList.remove("active__btn");
   }
-  if (window.pageYOffset >= 2393) {
+  if (window.pageYOffset >= 2234) {
     btn_2.classList.remove("active__btn");
     btn_3.classList.add("active__btn");
   }
